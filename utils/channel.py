@@ -566,7 +566,7 @@ def append_data_to_info_data(
                 if info_host == host:
                     info_url = info["url"]
                     # Replace if new URL is shorter or has headers
-                    if len(info_url) > len(url) or headers:
+                    if info_url == url or headers:
                         if url in existing_urls:
                             existing_urls.remove(url)
                         existing_urls.add(info_url)
