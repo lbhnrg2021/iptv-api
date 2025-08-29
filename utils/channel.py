@@ -603,7 +603,6 @@ def append_data_to_info_data(
 
                     info_host = get_url_host(info["url"])
                     if info_host == host:
-                        host_exist = True
                         info_url = info["url"]
                         # Replace if new URL is longer or has headers
                         if len(info_url) < len(url) or headers:
